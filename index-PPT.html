@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Malik (PPT Style)</title>
+  <link rel="stylesheet" href="cssPPT/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- ========== LOADING SCREEN ========== -->
+  <div id="loader-wrapper">
+    <div class="canvas-container">
+      <canvas id="mazeCanvas"></canvas>
+    </div>
+    <div class="loading-info">
+      <h2>Loading...</h2>
+      <div class="loading-progress-bar">
+        <div id="progressFill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Speaker Notes Toggle -->
+  <button class="notes-toggle" id="notesToggle" aria-label="Toggle speaker notes">
+    📝 Notes
+  </button>
+
+  <!-- Speaker Notes Panel -->
+  <div class="notes-panel" id="notesPanel" role="complementary">
+    <h4>Speaker Notes</h4>
+    <p id="notesContent">Select a slide to view notes.</p>
+  </div>
+
+  <!-- Slides Container -->
+  <div class="slides-container" role="region" aria-label="Presentation slides">
+    <div class="slides-wrapper" id="slidesWrapper">
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 1: HERO / COVER
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide active" data-slide="0" role="group" aria-label="Slide 1 of 14: Cover"
+               data-notes="Perkenalkan saya Muhammad Malik Fajar El-Syarif. Saya siswa SMK Informatika dengan passion di web development, UI/UX design, dan ingin menjadi AI Engineer. Portfolio ini menampilkan project, skills, dan cita-cita saya.">
+        <div class="slide-content">
+          <div class="slide-layout-split">
+            <div>
+              <h1 class="slide-title shared-element">Hello!, I'm Malik<br>Student who wants<br>become AI Engineer!</h1>
+              <p class="slide-text shared-element">
+                Fokus pada web development, UI/UX design, dan problem solving.
+                Portfolio ini menampilkan project, skills, dan cita-cita saya:
+                <strong class="shared-element">Masuk PSSN, PTN atau PTS Impian!</strong>
+              </p>
+            </div>
+            <div class="content-card shared-element" style="text-align: center;">
+              <img src="img/malikprofil.jpg" alt="Foto Profil Malik" class="content-image shared-element">
+              <div style="color: var(--muted); margin-top: 1rem;" class="shared-element">
+                <strong class="shared-element">Muhammad Malik Fajar El-Syarif</strong><br class="shared-element">
+                Siswa SMK Informatika Fithrah Insani<br class="shared-element">
+                Jurusan: PPLG (2024 - Sekarang)
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 2: ABOUT ME
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="1" role="group" aria-label="Slide 2 of 14: About Me"
+               data-notes="Saya Malik, siswa SMK Informatika dengan passion di bidang teknologi. Saya suka menciptakan solusi praktis melalui web development dan desain UI yang menarik.">
+        <div class="slide-content">
+          <h2 class="shared-element">About Me</h2>
+          <div class="slide-layout-split">
+            <div>
+              <p class="slide-text shared-element">
+                Saya Malik, siswa SMK Informatika dengan passion di bidang teknologi.
+                Saya suka menciptakan solusi praktis melalui web development dan desain UI yang menarik.
+              </p>
+              <p class="slide-text shared-element" style="margin-top: 1rem;">
+                Fokus utama saya saat ini adalah memperbaiki skill programming, belajar cybersecurity,
+                dan mempersiapkan diri untuk masuk PSSN atau Universitas seperti UIN, Itenas, atau ITB.
+              </p>
+              <p class="slide-text shared-element" style="margin-top: 1rem;">
+                Di luar coding, saya suka belajar matematika, membaca artikel tech,
+                dan berkontribusi di project open source kecil.
+              </p>
+            </div>
+            <div class="content-card shared-element">
+              <h3 class="shared-element">Quick Info</h3>
+              <div style="color: var(--muted); line-height: 2;" class="shared-element">
+                📍 Lokasi: Indonesia<br class="shared-element">
+                🎓 SMK Informatika Fithrah Insani<br class="shared-element">
+                💼 Status: Student<br class="shared-element">
+                🎯 Goal: Masuk PSSN / PTN / PTS<br class="shared-element">
+                💡 Minat: Web Dev, UI/UX, Cybersecurity & AI Engineer
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 3: SKILLS - PART 1
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="2" role="group" aria-label="Slide 3 of 14: Skills Part 1"
+               data-notes="Skills saya terbagi menjadi beberapa kategori. Frontend skills meliputi HTML CSS, JavaScript, dan beberapa framework. Backend meliputi NodeJS, PHP, dan Python. Database meliputi MySQL dan MongoDB.">
+        <div class="slide-content">
+          <h2>Keahlian</h2>
+          <div class="slide-layout-split">
+            <div class="content-card">
+              <h3>Frontend & Scripting</h3>
+              <div class="skill-row">
+                <div class="skill-name">HTML & CSS</div>
+                <div class="skill-right">
+                  <div class="progress-bar"><div class="progress-fill" data-skill="90"></div></div>
+                  <div class="skill-percentage">90%</div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-name">Python</div>
+                <div class="skill-right">
+                  <div class="progress-bar"><div class="progress-fill" data-skill="85"></div></div>
+                  <div class="skill-percentage">85%</div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-right">
+                  <div class="progress-bar"><div class="progress-fill" data-skill="78"></div></div>
+                  <div class="skill-percentage">78%</div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-name">SQL / Database</div>
+                <div class="skill-right">
+                  <div class="progress-bar"><div class="progress-fill" data-skill="75"></div></div>
+                  <div class="skill-percentage">75%</div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-name">NodeJS</div>
+                <div class="skill-right">
+                  <div class="progress-bar"><div class="progress-fill" data-skill="60"></div></div>
+                  <div class="skill-percentage">60%</div>
+                </div>
+              </div>
+            </div>
+            <div class="content-card">
+              <h3>Backend & Framework</h3>
+              <div class="skill-row">
+                <div class="skill-name">JSON</div>
+                <div class="skill-right">
+                  <div class="progress-bar"><div class="progress-fill" data-skill="55"></div></div>
+                  <div class="skill-percentage">55%</div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-name">TypeScript</div>
+                <div class="skill-right">
+                  <div class="progress-bar"><div class="progress-fill" data-skill="45"></div></div>
+                  <div class="skill-percentage">45%</div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-name">PHP</div>
+                <div class="skill-right">
+                  <div class="progress-bar"><div class="progress-fill" data-skill="43"></div></div>
+                  <div class="skill-percentage">43%</div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-name">ReactJS</div>
+                <div class="skill-right">
+                  <div class="progress-bar"><div class="progress-fill" data-skill="30"></div></div>
+                  <div class="skill-percentage">30%</div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-name">C / C++ / C#</div>
+                <div class="skill-right">
+                  <div class="progress-bar"><div class="progress-fill" data-skill="22"></div></div>
+                  <div class="skill-percentage">22%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 4: PROJECT 1 - KULINA AI
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="3" role="group" aria-label="Slide 4 of 14: Project Kulina AI"
+               data-notes="Project pertama adalah Website Kuliner dengan sistem AI. Dibuat untuk membantu UMKM kuliner dalam mengelola dan mempromosikan bisnis mereka secara online.">
+        <div class="slide-content">
+          <h2>Projects</h2>
+          <div class="slide-layout-split">
+            <div class="content-card">
+              <h3>Website Kuliner Dengan Sistem AI</h3>
+              <p class="slide-text">
+                <strong>Problem:</strong> UMKM Membutuhkan website dan AI untuk membantu usaha mereka.
+              </p>
+              <p class="slide-text">
+                <strong>Solusi:</strong> Web app dengan menu management, dashboard, dan Sistem AI untuk mendeskripsikan menu.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">ReactJS</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Tailwind</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+              <p class="slide-text" style="margin-top: 1rem; font-size: 0.9rem;">
+                <strong>Role:</strong> Designer & Front-end
+              </p>
+              <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+                <a href="https://github.com/EpIteesTeams/KulinaAI" target="_blank" class="tech-tag" style="background: rgba(255,255,255,0.1);">🔗 GitHub</a>
+              </div>
+            </div>
+            <div style="text-align: center;">
+              <img src="img/kulinaai.png" alt="Screenshot Kulina AI" class="content-image">
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 5: PROJECT 2 - PORTFOLIO GLASSMORPHISM
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="4" role="group" aria-label="Slide 5 of 14: Project Portfolio"
+               data-notes="Project kedua adalah Portfolio Glassmorphism template. Ini adalah template portfolio modern dengan efek glassmorphism yang kekinian.">
+        <div class="slide-content">
+          <h2>Projects</h2>
+          <div class="slide-layout-split">
+            <div class="content-card">
+              <h3>Portfolio Glassmorphism</h3>
+              <p class="slide-text">
+                <strong>Problem:</strong> Butuh portfolio website modern dengan desain kekinian.
+              </p>
+              <p class="slide-text">
+                <strong>Solusi:</strong> Single-page portfolio dengan efek glassmorphism, animasi smooth, dan fully responsive.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Vanilla JS</span>
+              </div>
+              <p class="slide-text" style="margin-top: 1rem; font-size: 0.9rem;">
+                <strong>Role:</strong> All
+              </p>
+              <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+                <a href="https://github.com/Malikkun09/portofolio-glassmorphims-template" target="_blank" class="tech-tag" style="background: rgba(255,255,255,0.1);">🔗 GitHub</a>
+              </div>
+            </div>
+            <div style="text-align: center;">
+              <img src="img/portoglass.png" alt="Screenshot Portfolio" class="content-image">
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 6: PROJECT 3 - API DOWNLOADER
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="5" role="group" aria-label="Slide 6 of 14: Project API Platform"
+               data-notes="Project ketiga adalah API Platform untuk bot WhatsApp downloader. API ini menyediakan endpoint untuk mendownload video, audio, dan media dari berbagai platform.">
+        <div class="slide-content">
+          <h2>Projects</h2>
+          <div class="slide-layout-split">
+            <div class="content-card">
+              <h3>API Platform Downloader</h3>
+              <p class="slide-text">
+                <strong>Problem:</strong> Butuh API untuk bot WhatsApp agar dapat mendownload media dari berbagai platform.
+              </p>
+              <p class="slide-text">
+                <strong>Solusi:</strong> API endpoint yang menyediakan URL download untuk berbagai format media dengan sistem API keys.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+              <p class="slide-text" style="margin-top: 1rem; font-size: 0.9rem;">
+                <strong>Role:</strong> Backend Developer
+              </p>
+              <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+                <a href="https://github.com/Malikkun09/api-platform-sosmed-downloader-BETA-" target="_blank" class="tech-tag" style="background: rgba(255,255,255,0.1);">🔗 GitHub</a>
+              </div>
+            </div>
+            <div style="text-align: center;">
+              <img src="img/APIwebsite.png" alt="Screenshot API Platform" class="content-image">
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 7: PROJECT 4 - CHAT LIVE (FEATURED)
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="6" role="group" aria-label="Slide 7 of 14: Project Chat Live"
+               data-notes="Project terbesar saya adalah Chat Live - platform chat real-time. Masih dalam pengembangan aktif dengan fitur real-time messaging, user authentication, rooms, dan media sharing.">
+        <div class="slide-content">
+          <h2>Projects</h2>
+          <div class="content-card featured-card" style="border: 1px solid rgba(0, 255, 200, 0.3); background: linear-gradient(135deg, rgba(0, 200, 200, 0.1), rgba(0, 150, 100, 0.1));">
+            <span class="tech-tag" style="background: linear-gradient(90deg, rgba(0, 255, 200, 0.2), rgba(0, 200, 255, 0.2)); color: #00ffc8;">PROJEK TERBESAR</span>
+            <h3 style="font-size: 1.8rem; margin-top: 0.75rem;">Chat Live - Real-time Chat Platform</h3>
+            <p class="slide-text"><strong>Status:</strong> Dalam Pengembangan</p>
+            <p class="slide-text"><strong>Fitur:</strong> Real-time messaging, user authentication, rooms, media sharing, dan masih banyak lagi!</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Socket.io</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">WebSocket</span>
+            </div>
+            <p class="slide-text" style="margin-top: 1rem; font-size: 0.9rem;">
+              <strong>Role:</strong> Full Stack Developer
+            </p>
+            <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+              <a href="https://github.com/Malikkun09/chatlive-BETA-" target="_blank" class="tech-tag" style="background: rgba(255,255,255,0.1);">🔗 GitHub</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 8: EXPERIENCE
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="7" role="group" aria-label="Slide 8 of 14: Experience"
+               data-notes="Pengalaman saya termasuk BPJS Hackhaton dengan tim 3 orang - mendapat peringkat 2, kontribusi di project open source, dan workshop web development sebagai peserta dan helper.">
+        <div class="slide-content">
+          <h2>Pengalaman</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>BPJS Hackhaton</h3>
+              <p class="slide-text">1 Tim dengan diisi 3 orang, 24 jam membuat solusi digital untuk masalah sekolah.</p>
+              <p class="slide-text" style="margin-top: 0.5rem;">Membuat prototype "Smart Library System" dengan fitur barcode scanning dan auto-report. <strong style="color: #93ff8a;">Juara 2</strong>.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Project Kolaborasi Online</h3>
+              <p class="slide-text">Bekerja sama dengan developer dari sekolah lain via GitHub.</p>
+              <p class="slide-text" style="margin-top: 0.5rem;">Berkontribusi di project open source kecil-kecilan, belajar workflow tim dan code review.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Workshop Web Development</h3>
+              <p class="slide-text">Sebagai peserta & helper di workshop coding.</p>
+              <p class="slide-text" style="margin-top: 0.5rem;">Mengajar HTML/CSS dasar untuk junior, sharing tips & trick belajar coding.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           YANG SEDANG SAYA PELAJARI
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="8" role="group" aria-label="Slide 9 of 17: Currently Learning"
+               data-notes="Sedang belajar cybersecurity untuk fundamental pentesting, advanced JavaScript untuk membangun aplikasi kompleks, UI/UX Design dengan Figma, dan Fisika untuk persiapan PSSN.">
+        <div class="slide-content">
+          <h2 class="shared-element">Yang Sedang Saya Pelajari</h2>
+          <div class="slide-layout-grid">
+            <div class="learn-card shared-element">
+              <h4>🔒 Cybersecurity</h4>
+              <p>Fundamental pentesting, network security, dan ethical hacking. Target: sertifikasi dasar.</p>
+            </div>
+            <div class="learn-card shared-element">
+              <h4>⚛️ Advanced JavaScript</h4>
+              <p>Async/await, promises, modules, dan ES6+ features. Building complex apps.</p>
+            </div>
+            <div class="learn-card shared-element">
+              <h4>🎨 UI/UX Design</h4>
+              <p>Figma advanced, user research, prototyping, dan design system.</p>
+            </div>
+            <div class="learn-card shared-element">
+              <h4>📐 Fisika</h4>
+              <p>Konsep fisika untuk programming logic & problem solving. Persiapan PSSN.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 9A: TECHNICAL SKILLS
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="9" role="group" aria-label="Slide 10 of 17: Technical Skills"
+               data-notes="Fokus pada fundamental yang bikin code berkualitas - bukan cuma jalan, tapi efisien dan maintainable.">
+        <div class="slide-content">
+          <h2 class="shared-element">Technical Skills</h2>
+          <p class="slide-text shared-element" style="margin-bottom: 1.5rem;">Fundamental yang bikin code berkualitas — bukan cuma jalan, tapi efisien dan maintainable.</p>
+          <div class="slide-layout-grid">
+            <div class="learn-card shared-element">
+              <h4>📊 Data Structures & Algorithms</h4>
+              <p>Dasar berpikir efisien, bukan cuma coding jalan.</p>
+            </div>
+            <div class="learn-card shared-element">
+              <h4>⚡ Web Performance</h4>
+              <p>Lazy load, bundle size, Lighthouse, Core Web Vitals.</p>
+            </div>
+            <div class="learn-card shared-element">
+              <h4>🔀 Git Advanced</h4>
+              <p>Branching, rebase, conflict resolution, workflow tim.</p>
+            </div>
+            <div class="learn-card shared-element">
+              <h4>🗄️ Backend Fundamentals</h4>
+              <p>REST API, auth, database basic (PostgreSQL/MySQL).</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 9B: DESIGN & PRODUCT
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="10" role="group" aria-label="Slide 11 of 17: Design & Product"
+               data-notes="Banyak anak bisa coding, sedikit yang mikir produk. Ini yang bikin aku beda.">
+        <div class="slide-content">
+          <h2 class="shared-element">Design & Product</h2>
+          <p class="slide-text shared-element" style="margin-bottom: 1.5rem;">Banyak anak bisa coding, sedikit yang mikir produk. Ini yang bikin aku beda.</p>
+          <div class="slide-layout-grid">
+            <div class="learn-card shared-element">
+              <h4>✍️ UX Writing</h4>
+              <p>Microcopy, error message, CTA yang manusiawi.</p>
+            </div>
+            <div class="learn-card shared-element">
+              <h4>🎨 Design System</h4>
+              <p>Component, token warna, typography scale.</p>
+            </div>
+            <div class="learn-card shared-element">
+              <h4>♿ Accessibility (a11y)</h4>
+              <p>Kontras warna, keyboard navigation, screen reader.</p>
+            </div>
+            <div class="learn-card shared-element">
+              <h4>👥 Human–Computer Interaction</h4>
+              <p>Cara manusia berinteraksi dengan sistem, bukan sekadar UI cantik.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 9C: MINDSET & FUTURE
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="11" role="group" aria-label="Slide 12 of 17: Mindset & Future Skills"
+               data-notes="Skill yang bikin aku future-ready dan valued di tim.">
+        <div class="slide-content">
+          <h2 class="shared-element">Mindset & Future Skills</h2>
+          <p class="slide-text shared-element" style="margin-bottom: 1.5rem;">Skill yang bikin aku future-ready dan valued di tim.</p>
+          <div class="slide-layout-grid">
+            <div class="learn-card shared-element">
+              <h4>🤖 AI for Developers</h4>
+              <p>Prompting, AI-assisted coding, workflow automation.</p>
+            </div>
+            <div class="learn-card shared-element">
+              <h4>⚖️ Cyber Ethics</h4>
+              <p>Etika AI, data privacy, keamanan user.</p>
+            </div>
+            <div class="learn-card shared-element">
+              <h4>🧩 Problem Solving</h4>
+              <p>Decompose, pattern recognition, abstraction.</p>
+            </div>
+            <div class="learn-card shared-element">
+              <h4>📢 Technical Communication</h4>
+              <p>Dokumentasi, presentasi, jelasin ide ke non-tech.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 10: EDUCATION
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="12" role="group" aria-label="Slide 13 of 17: Education"
+               data-notes="Saat ini saya bersekolah di SMK Informatika Fithrah Insani, jurusan PPLG (Pengembangan Perangkat Lunak dan Game). Kelas 10 mempelajari Web Programming, Algoritma, Matematika Diskrit, dan WordPress. Kelas 11 mempelajari Unity dan UI/UX Design.">
+        <div class="slide-content">
+          <h2>Pendidikan</h2>
+          <div class="content-card" style="margin-bottom: 1.5rem;">
+            <h3>SMK Informatika Fithrah Insani</h3>
+            <p class="slide-text">Pengembangan Perangkat Lunak dan Game (PPLG) • 2024 - Sekarang</p>
+            <div style="margin-top: 1rem;">
+              <p class="slide-text"><strong>Kelas 10:</strong></p>
+              <ul style="color: var(--muted); margin-left: 1.5rem; margin-top: 0.5rem;">
+                <li>Web Programming</li>
+                <li>Algoritma</li>
+                <li>Matematika Diskrit</li>
+                <li>WordPress</li>
+              </ul>
+            </div>
+            <div style="margin-top: 1rem;">
+              <p class="slide-text"><strong>Kelas 11:</strong></p>
+              <ul style="color: var(--muted); margin-left: 1.5rem; margin-top: 0.5rem;">
+                <li>Unity</li>
+                <li>UI/UX Design</li>
+              </ul>
+            </div>
+          </div>
+          <div style="text-align: center;">
+            <span class="edu-step">🏫 TK Teratai</span>
+            <span class="edu-step">🏫 SD Tridaya Tunas Bangsa</span>
+            <span class="edu-step">🏫 MTS Nurul Iman</span>
+            <span class="edu-step">🏫 SMK Informatika Fithrah Insani</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 11: CERTIFICATES
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="13" role="group" aria-label="Slide 14 of 17: Certificates"
+               data-notes="Sertifikat yang sudah saya raih: Dicoding Introduction to Financial Literacy, serta 2 sertifikat partisipasi Hackhaton dari Imphnen dan Imphnen x Kolosal.">
+        <div class="slide-content">
+          <h2>Certificates</h2>
+          <div class="slide-layout-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="cert-card">
+              <img src="img/sertifikat_course_905_5553404_010126133322_Page1.png" alt="Dicoding Certificate" class="cert-image">
+              <div class="cert-title">Dicoding - Introduction to Financial Literacy</div>
+              <div class="cert-note">Jan 2026</div>
+            </div>
+            <div class="cert-card">
+              <img src="img/certificate-EpItees%20(1).png" alt="Hackhaton Certificate" class="cert-image">
+              <div class="cert-title">Imphnen x Kolosal - Hackhaton</div>
+              <div class="cert-note">Okt - Nov 2025</div>
+            </div>
+            <div class="cert-card">
+              <img src="img/certificate-EpItees.png" alt="Hackhaton Certificate 2" class="cert-image">
+              <div class="cert-title">Imphnen - Hackhaton 2</div>
+              <div class="cert-note">Des 2025</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 12: DREAMS
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="14" role="group" aria-label="Slide 15 of 17: Dreams"
+               data-notes="Target utama saya adalah diterima di Politeknik Siber dan Sandi Negara (PSSN), kemudian melanjutkan ke PTN favorit seperti Polban, ITB, atau Binus untuk melanjutkan studi di bidang Teknik Informatika atau Cybersecurity.">
+        <div class="slide-content" style="justify-content: center;">
+          <h2 style="text-align: center;">My Dreams</h2>
+          <div class="dream-box">
+            <img src="img/pssn-removebg-preview.png" alt="Logo PSSN" class="pssn-logo">
+            <h3 style="font-size: 1.8rem;">🎯 Masuk PSSN!</h3>
+            <p class="slide-text" style="max-width: 600px; margin: 1rem auto;">
+              Target utama saya adalah diterima di Politeknik Siber dan Sandi Negara (PSSN),
+              kemudian melanjutkan ke PTN favorit seperti Polban, ITB, atau Binus
+              untuk melanjutkan studi di bidang Teknik Informatika atau Cybersecurity.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 13: CONTACT
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="15" role="group" aria-label="Slide 16 of 17: Contact"
+               data-notes="Terima kasih sudah melihat portfolio saya. Saya terbuka untuk kolaborasi, pertanyaan, atau diskusi. Jangan ragu untuk menghubungi saya melalui WhatsApp, Email, atau GitHub.">
+        <div class="slide-content">
+          <h2>Contact</h2>
+          <div class="slide-layout-split">
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <a href="https://wa.me/628891983723" target="_blank" class="contact-link whatsapp-btn-anim" style="display: flex; align-items: center; gap: 1rem; padding: 1.5rem; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); border-radius: 16px; text-decoration: none;">
+                <span style="font-size: 2rem;">📱</span>
+                <div>
+                  <h3 style="color: white; margin: 0;">Chat via WhatsApp</h3>
+                  <p style="color: rgba(255,255,255,0.9); margin: 0.5rem 0 0;">Kirim pesan langsung untuk kolaborasi!</p>
+                </div>
+              </a>
+              <div class="contact-links">
+                <a href="mailto:malikacconlyone@gmail.com" target="_blank" class="contact-link" style="text-decoration: none; color: inherit;">
+                  <span class="contact-icon">📧</span>
+                  <div>
+                    <strong>Email</strong>
+                    <div style="color: var(--muted);">malikacconlyone@gmail.com</div>
+                  </div>
+                </a>
+                <a href="https://github.com/Malikkun09" target="_blank" class="contact-link" style="text-decoration: none; color: inherit;">
+                  <span class="contact-icon">💻</span>
+                  <div>
+                    <strong>GitHub</strong>
+                    <div style="color: var(--muted);">github.com/Malikkun09</div>
+                  </div>
+                </a>
+                <div class="contact-link">
+                  <span class="contact-icon">📱</span>
+                  <div>
+                    <strong>WhatsApp</strong>
+                    <div style="color: var(--muted);">+62 889-1983-723</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           SLIDE 14: THANK YOU
+           ═══════════════════════════════════════════════════════════════════ -->
+      <article class="slide" data-slide="16" role="group" aria-label="Slide 17 of 17: Thank You"
+               data-notes="Terima kasih sudah meluangkan waktu untuk melihat portfolio saya. Saya berharap dapat berkolaborasi dengan Anda di masa depan!">
+        <div class="slide-content" style="justify-content: center; align-items: center; text-align: center;">
+          <h1 class="slide-title" style="font-size: clamp(3rem, 8vw, 5rem);">Thank You!</h1>
+          <p class="slide-text" style="font-size: 1.5rem; margin-top: 1rem;">
+            Atas perhatiannya 😄
+          </p>
+          <p class="slide-text" style="margin-top: 2rem;">
+            Dibuat dengan ❤️ dan banyak ☕
+          </p>
+          <p class="slide-text" style="margin-top: 0.5rem; opacity: 0.7;">
+            © 2026 Malik
+          </p>
+          <a href="https://mlikfjr.my.id" target="_blank" class="portfolio-link-btn">
+            Kembali ke Portfolio →
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- Navigation Controls -->
+  <nav class="nav-controls" aria-label="Slide navigation">
+    <button class="nav-btn" id="prevBtn" aria-label="Previous slide">←</button>
+    <div class="pagination" id="pagination" role="tablist"></div>
+    <span class="slide-counter" id="slideCounter">1 / 14</span>
+    <button class="nav-btn" id="nextBtn" aria-label="Next slide">→</button>
+  </nav>
+
+  <script src="jsPPT/index.js"></script>
+</body>
+</html>
